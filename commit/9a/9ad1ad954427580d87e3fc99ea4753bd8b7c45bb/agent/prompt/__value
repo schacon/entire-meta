@@ -1,9 +1,0 @@
-is Agent.GetHookConfigPath used anywhere?
-
----
-
-lets remove it
-
----
-
-commit and create a pr referencing issue 424

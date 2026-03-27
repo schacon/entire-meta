@@ -1,5 +1,0 @@
-Replace all uses of git.PlainOpenWithOptions that are empty with a call to git.PlainOpen instead.
-
----
-
-Replace calls with only EnableDotGitCommonDir: true, as that no longer exists and is the default behaviour.
