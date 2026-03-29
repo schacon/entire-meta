@@ -13,7 +13,18 @@ them across repositories.
 Do **not** clone this repository directly. Instead, configure it as a
 metadata remote in your local checkout of the main project using gmeta.
 
-## Setup
+## Clone the Entire Source Code
+
+You will want to clone only the main branch for the Entire project so it's 7M rather than 500M
+(the native Entire metadata format is already quite large).
+
+```
+git clone --single-branch git@github.com:entireio/cli.git
+```
+
+## Setup Metadata
+
+Now you can setup the gmeta metadata tool and get a much smaller expandable working set.
 
 1. Install gmeta (see [gmeta README](https://github.com/schacon/gmeta) for details).
 
