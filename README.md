@@ -10,12 +10,8 @@ them across repositories.
 
 ## How It Works
 
-Metadata is stored locally in a SQLite database (`.git/gmeta.sqlite`) and serialized
-into Git trees and commits under `refs/meta/` refs for synchronization. This
-repository serves as the shared remote for that metadata.
-
-You do **not** need to clone this repository directly. Instead, configure it as a
-metadata remote in your local checkout of the main project.
+Do **not** clone this repository directly. Instead, configure it as a
+metadata remote in your local checkout of the main project using gmeta.
 
 ## Setup
 
@@ -24,7 +20,7 @@ metadata remote in your local checkout of the main project.
 2. In your local clone of the main project, add this repository as a metadata remote:
 
    ```
-   gmeta remote add git@github.com:schacon/entire-meta.git
+   gmeta remote add schacon/entire-meta
    ```
 
 3. Pull existing metadata:
@@ -50,6 +46,8 @@ metadata remote in your local checkout of the main project.
 
 Target types include `commit:<sha>`, `branch:<name>`, `change-id:<id>`,
 `path:<file>`, and `project` (for repo-wide metadata).
+
+You can also create simple sets and lists as value types.
 
 See `gmeta --help` for the full command reference.
 
